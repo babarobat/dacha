@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Koten\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Koten\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_dacha_urp.2003962205.00" t="ExcludeRecursive" />
+    <e p="L:\InComp\Git\dacha\dacha_urp" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Conifers [BOTD]" t="Include">
+          <e p="Conifers [BOTD] URP Readme.txt" t="Include" />
+          <e p="Getting started.txt" t="Include" />
+          <e p="Render Pipeline Support" t="Include">
+            <e p="Built-in RP" t="Include">
+              <e p="CTI Runtime Components" t="Include">
+                <e p="Resources" t="Include">
+                  <e p="CTI_Camera-DepthNormalTexture_301.shader" t="Include" />
+                  <e p="CTI_Internal-DeferredReflections.shader" t="Include" />
+                  <e p="CTI_Internal-DeferredShading.shader" t="Include" />
+                </e>
+                <e p="Scripts" t="Include">
+                  <e p="CTI_CustomWind.cs" t="Include" />
+                  <e p="CTI_Utils.cs" t="Include" />
+                  <e p="Editor" t="Include">
+                    <e p="CTI_AdvancedEdgeFluttering.cs" t="Include" />
+                    <e p="CTI_DetailsEnum.cs" t="Include" />
+                    <e p="CTI_ShaderGUI.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="CTI_LOD_Bark_301.shader" t="Include" />
+                  <e p="CTI_LOD_Bark_Array_301.shader" t="Include" />
+                  <e p="CTI_LOD_Billboard_301.shader" t="Include" />
+                  <e p="CTI_LOD_Leaves_301.shader" t="Include" />
+                  <e p="Includes" t="Include">
+                    <e p="CTI_BillboardVertex_301.cginc" t="Include" />
+                    <e p="CTI_Builtin4xTreeLibraryTumbling_301.cginc" t="Include" />
+                    <e p="CTI_indirect.cginc" t="Include" />
+                    <e p="CTI_TranslucentLighting_301.cginc" t="Include" />
+                  </e>
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="CSVSerializer" t="Include">
+          <e p="CSVSerializer.cs" t="Include" />
+          <e p="Demo" t="Include">
+            <e p="ConstData.cs" t="Include" />
+            <e p="CSVImportExample.cs" t="Include" />
+            <e p="CSVImportExampleFromWeb.cs" t="Include" />
+            <e p="LanguageStringData.cs" t="Include" />
+            <e p="RankingData.cs" t="Include" />
+            <e p="Scene" t="Include">
+              <e p="UIRanking.cs" t="Include" />
+              <e p="UIRankingSlot.cs" t="Include" />
+              <e p="UIRankingWinSlot.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="CTI URP" t="Include">
+          <e p="CTI Runtime Components URP" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CTI_SRP_CustomWind.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="CTI_URP_ShaderGUI.cs" t="Include" />
+                <e p="CTI_URPTransDrawer.cs" t="Include" />
+                <e p="CTI_URPWindDrawer.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="CTI URP Bark Array.shader" t="Include" />
+              <e p="CTI URP Bark.shader" t="Include" />
+              <e p="CTI URP Billboard.shader" t="Include" />
+              <e p="CTI URP Leaves.shader" t="Include" />
+              <e p="Includes" t="Include">
+                <e p="CTI URP Bending.hlsl" t="Include" />
+                <e p="CTI URP Billboard.hlsl" t="Include" />
+                <e p="CTI URP Inputs.hlsl" t="Include" />
+                <e p="CTI URP Lighting.hlsl" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Editor" t="Include">
+            <e p="EPPlus" t="Include">
+              <e p="readme.txt" t="Include" />
+            </e>
+            <e p="Excel4Unity" t="Include">
+              <e p="DataItem.txt" t="Include" />
+              <e p="Excel.cs" t="Include" />
+              <e p="ExcelDeserializer.cs" t="Include" />
+              <e p="ExcelHelper.cs" t="Include" />
+              <e p="ExcelSerializer.cs" t="Include" />
+              <e p="ExcelTable.cs" t="Include" />
+              <e p="ExcelTableCell.cs" t="Include" />
+            </e>
+            <e p="MyEditor.cs" t="Include" />
+            <e p="Windows" t="Include">
+              <e p="AssistantWindow.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Model" t="Include">
+            <e p="DataItem.cs" t="Include" />
+            <e p="sheet2Item.cs" t="Include" />
+            <e p="TestItem.cs" t="Include" />
+          </e>
+          <e p="Point.cs" t="Include" />
+          <e p="SimpleCameraController.cs" t="Include" />
+        </e>
+        <e p="TutorialInfo" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReadmeEditor.cs" t="Include" />
+            </e>
+            <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="dacha_urp.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
