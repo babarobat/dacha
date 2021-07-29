@@ -82,7 +82,50 @@
             </e>
           </e>
         </e>
+        <e p="EasyRoads3D" t="Include">
+          <e p="_Readme.txt" t="Include" />
+          <e p="lib" t="Include">
+            <e p="DelaunayER.txt" t="Include" />
+          </e>
+          <e p="prefab meshes" t="Include">
+            <e p="_custom prefabs.txt" t="Include" />
+          </e>
+          <e p="prefab sources" t="Include">
+            <e p="_custom prefabs.txt" t="Include" />
+          </e>
+          <e p="Release - Install Notes.txt" t="Include" />
+          <e p="Resources" t="Include">
+            <e p="custom prefabs" t="Include">
+              <e p="_custom prefabs.txt" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="ERVegetationStudio.cs" t="Include" />
+            <e p="runtimeScript.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="ER I Connector Blend.shader" t="Include" />
+            <e p="ER Road Decal.shader" t="Include" />
+            <e p="ER Road Detail.shader" t="Include" />
+            <e p="ER Road Mask Blend.shader" t="Include" />
+            <e p="ER Road Transparency.shader" t="Include" />
+            <e p="ER Road.shader" t="Include" />
+            <e p="ER Surface.shader" t="Include" />
+            <e p="Legacy" t="Include">
+              <e p="EasyRoads3D - Unity 2018 Standard.shader" t="Include" />
+            </e>
+          </e>
+          <e p="SRP Package Notes.txt" t="Include" />
+          <e p="SRP Support Packages" t="Include">
+            <e p="_Readme.txt" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
+          <e p="Data" t="Include">
+            <e p="BoundPoint.cs" t="Include" />
+            <e p="Point.cs" t="Include" />
+            <e p="Tree.cs" t="Include" />
+          </e>
           <e p="Editor" t="Include">
             <e p="EPPlus" t="Include">
               <e p="readme.txt" t="Include" />
@@ -106,8 +149,49 @@
             <e p="sheet2Item.cs" t="Include" />
             <e p="TestItem.cs" t="Include" />
           </e>
-          <e p="Point.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
+          <e p="Views" t="Include">
+            <e p="BaseView.cs" t="Include" />
+            <e p="BoundLineView.cs" t="Include" />
+            <e p="BoundPointView.cs" t="Include" />
+            <e p="Empty.cs" t="Include" />
+            <e p="GuiStateSelector.cs" t="Include" />
+            <e p="IStateListener.cs" t="Include" />
+            <e p="MapObjectState.cs" t="Include" />
+            <e p="StateObjects.cs" t="Include" />
+            <e p="TreeView.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">

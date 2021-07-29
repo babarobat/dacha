@@ -1,6 +1,9 @@
 using System.Collections.Generic;
+using System.Linq;
+using Data;
 using UnityEditor;
 using UnityEngine;
+using Views;
 
 
 namespace Editor.Windows
@@ -24,8 +27,20 @@ namespace Editor.Windows
             {
                 BoundsCreator.Create();
             }
+            
+            if (GUILayout.Button("Real"))
+            {
+                StateObjects.SetState(MapObjectState.Real);
+            }
+            
+            if (GUILayout.Button("Primitive"))
+            {
+                StateObjects.SetState(MapObjectState.Primitives);
+            }
         }
     }
+
+    
 
     public static class BoundsCreator
     {
@@ -40,25 +55,39 @@ namespace Editor.Windows
 
             for (var i = parent.transform.childCount - 1; i >= 0; i--)
             {
-                Object.DestroyImmediate(parent.transform.GetChild(i).gameObject);
+                var child = parent.transform.GetChild(i);
+
+                Object.DestroyImmediate(child.gameObject);
             }
 
-            // var prefabs = new[]
-            // {
-            //     GameObject.CreatePrimitive(PrimitiveType.Cube)
-            // };
 
-            var bounds = BoundsParser.Parse();
+            var boundPointPrefab = Resources.Load<BoundPointView>("bounds/bound_point");
+            var boundLinePrefab = Resources.Load<BoundLineView>("bounds/bound_line");
+
+
+            var bounds = BoundsParser.Parse().ToArray();
+
 
             foreach (var boundPoint in bounds)
             {
-                //var prefab = prefabs[Random.Range(0, prefabs.Length)];
+                var boundsObj = Object.Instantiate(boundPointPrefab, boundPoint.Position, Quaternion.identity, parent.transform);
+                boundsObj.name = boundPoint.ToString();
+                boundsObj.Awake();
+                boundsObj.Connect(boundPoint);
+                
+           
+            }
 
-               // var boundsObj = Object.Instantiate(prefab, boundPoint.Position, Quaternion.identity, parent.transform);
-               var boundsObj = GameObject.CreatePrimitive(PrimitiveType.Cube);
-               boundsObj.transform.position = boundPoint.Position;
-               boundsObj.transform.parent = parent.transform;
-               boundsObj.name = boundPoint.ToString();
+            for (var i = 0; i < bounds.Length; i++)
+            {
+                var first = bounds[i];
+                var second = i < bounds.Length - 1 ? bounds[i + 1] : bounds[0];
+                var boundLineObj = Object.Instantiate(boundLinePrefab, parent.transform);
+                boundLineObj.name = $"{first.Id} - {second.Id}";
+                boundLineObj.Awake();
+                boundLineObj.Connect((first,second));
+                
+          
             }
         }
     }
@@ -132,10 +161,10 @@ namespace Editor.Windows
 
             var prefabs = new[]
             {
-                Resources.Load<GameObject>("trees/tree_1"),
-                Resources.Load<GameObject>("trees/tree_2"),
+                Resources.Load<TreeView>("trees/tree_1"),
+                Resources.Load<TreeView>("trees/tree_2"),
                 //Resources.Load<GameObject>("trees/tree_3"),
-                Resources.Load<GameObject>("trees/tree_4"),
+                Resources.Load<TreeView>("trees/tree_4"),
             };
 
             var trees = TreesExcelParser.Parse();
@@ -149,6 +178,11 @@ namespace Editor.Windows
 
                 treeObj.transform.Rotate(0, y, 0, Space.Self);
                 treeObj.name = tree.ToString();
+                
+                treeObj.Awake();
+                treeObj.Connect(tree);
+                
+             
             }
         }
     }
